@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+
+}
+
+.banner {
+    display: none;
+}
+
+.info {
+    width: 100%;
+}
+
+.info h2 {
+    padding: 30px 30px 20px;
+    font-family: sans-serif;
+    font-size: 50px;
+    color: #111;
+    line-height: 44px;
+}
+
+.info button {
+    padding: 0px 30px 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #111;
+    line-height: 24px;
+}
+
+@media only screen and (min-width:768px) {
+    .banner {
+        display: block;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .wrapper {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .info h2 {
+        padding: 20px 0px 100px;
+
+    }
+
+    .info button {
+        padding: 20px 20px 20px;
+        background-color: aliceblue;
+        width: 265px;
+
+
+    }
+
+
+}
+
+.banner {
+    width: 100%
+}
+
+.banner2 {
+    width: 100%;
+}
+
+/* /////// OVERALL LAYOUT ////// */
+header,
+main,
+aside,
+footer {
+    border: .0em solid grey;
+    margin: 2em;
+}
+
+/* ///////SECTIONS ////////// */
+section {
+    padding: 1em;
+}
+
+/* /////  medium screen sizes ////// */
+
+@media all and (min-width:750px) {
+    body {
+        background-color: darkslategrey;
+    }
+
+    nav {
+        display: block;
+
+    }
+
+    input:not(:checked) ~ nav {
+        display: block;
+    }
+
+    header label {
+        display: none;
+    }
+
+    /*////  two column grid - overall page layout /////*/
+    div#wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "header-area   main-area"
+            "aside-area   main-area"
+            "footer-area   main-area";
+    }
+
+
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "h1-area h1-area"
+        "section1-area section2-area"
+        "section3-area section4-area"
+        "section5-area section6-area"
+        "section7-area section8-area"
+}
+
+
+}
+
+/*////////Sections////////*/
+
+.section-area img {
+    width: 50%;
+    max-width: 550px;
+    min-width: 150px;
+}
+
+.site {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto 1fr 3fr;
+
+
+}
+
+main {
+    grid-area: main-area;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+
+/*//Areas//*/
+
+.section1-area {
+    margin-top: 2em;
+}
+
+.section4-area {
+    margin-top: 5em;
+}
+
+.section8-area {
+    width: 50%
+}
+
+.section2-area {
+    margin-top: 2em;
+}
+
+#par {
+    margin-top: 7em;
+}
+
+.large {
+    margin-top: 2em;
+}
+
+#large {
+    margin-top: 7em;
+
+}
+
+/*///Images///*/
+img {
+    max-width: 100%;
+}
+
+* {
+    margin: 10px;
+}
+
+footer {
+    text-align: center
+}
+
+p {
+    color: aliceblue;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+
+#portfolioo {
+
+    width: 125px;
+    height: 35px;
+}
